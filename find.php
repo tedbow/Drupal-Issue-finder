@@ -17,6 +17,7 @@ $loader->load(__DIR__ . '/config/services.yml');
 
 $containerBuilder->compile();
 
+/** @var Application $application */
 $application = $containerBuilder->get(Application::class);
 //$application = new Application('Drupal Issue Finder', '0.1.0');
 //print_r($containerBuilder->getServiceIds());
@@ -26,6 +27,7 @@ foreach ($containerBuilder->getServiceIds() as $serviceId) {
     $application->add($service);
   }
 }
+$application->setDefaultCommand('find:find');
 $application->run();
 
 

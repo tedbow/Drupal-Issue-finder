@@ -4,8 +4,66 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d5e88477a7b70bf8a699698d6862fe1",
+    "content-hash": "59782a2d3fcfddd782ad61a3a5d110b8",
     "packages": [
+        {
+            "name": "envms/fluentpdo",
+            "version": "v2.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/envms/fluentpdo.git",
+                "reference": "34e96920339a97fe3897647d0d7ce314348c840c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/envms/fluentpdo/zipball/34e96920339a97fe3897647d0d7ce314348c840c",
+                "reference": "34e96920339a97fe3897647d0d7ce314348c840c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "envms/fluent-test": "^1.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Envms\\FluentPDO\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0",
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "envms",
+                    "homepage": "https://env.ms"
+                }
+            ],
+            "description": "FluentPDO is a quick and light PHP library for rapid query building. It features a smart join builder, which automatically creates table joins.",
+            "homepage": "https://github.com/envms/fluentpdo",
+            "keywords": [
+                "builder",
+                "database",
+                "db",
+                "dbal",
+                "fluent",
+                "mysql",
+                "oracle",
+                "pdo",
+                "query"
+            ],
+            "support": {
+                "issues": "https://github.com/envms/fluentpdo/issues",
+                "source": "https://github.com/envms/fluentpdo/tree/v2.2.2"
+            },
+            "time": "2021-06-17T14:52:07+00:00"
+        },
         {
             "name": "nategood/httpful",
             "version": "0.3.2",
@@ -3362,5 +3420,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.1.0"
 }
